@@ -41,3 +41,12 @@ div {
   font-size: 1.2em; 
 }
 
+.i {
+  font-style: italic;
+
+}
+
+
+.b{
+  font-style: oblique;
+}
