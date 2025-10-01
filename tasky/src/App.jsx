@@ -15,6 +15,8 @@ function App() {
     ]
   });
 
+  
+
     const doneHandler = (taskIndex) => {
     const tasks = [...taskState.tasks];
     tasks[taskIndex].done = !tasks[taskIndex].done;
@@ -27,6 +29,26 @@ function App() {
     tasks.splice(taskIndex, 1);
     setTaskState({tasks});
   } 
+
+    const formChangeHandler = (event) => {
+    let form = {...formState};
+
+    switch(event.target.name) {
+      case "title":
+          form.title = event.target.value;
+          break;
+      case "description":
+          form.description = event.target.value;
+          break;
+      case "deadline":
+          form.deadline = event.target.value;
+          break;
+      default:
+          form = formState;
+    }
+    setFormState(form);
+  }
+
 
 
 
@@ -43,11 +65,15 @@ function App() {
       done={task.done}
       markDone={() => doneHandler(index)}
       deleteTask = {() => deleteHandler(index)}
+      onChange={(event) => props.change(event)}
+
       
     />
   ))}
 
-  <AddTaskForm />
+  <AddTaskForm change={formChangeHandler} />
+
+  
 
     </div>
   );
