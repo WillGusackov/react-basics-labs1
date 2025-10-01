@@ -75,3 +75,15 @@ button {
   color: antiquewhite;
   
 }
+
+.deleteButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: red;
+}
+
+.deleteButton:hover{
+  background-color: red;
+  color: antiquewhite;
+}
