@@ -46,6 +46,10 @@ div {
 
 }
 
+.bold {
+  font-weight: bold;
+}
+
 
 .b{
   font-style: oblique;
