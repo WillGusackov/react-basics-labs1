@@ -50,7 +50,28 @@ div {
   font-weight: bold;
 }
 
+button {
+  border: none;
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 4px 6px;
+  width: 50px;
+  height: 25px;
+}
 
-.b{
-  font-style: oblique;
+
+
+.doneButton {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: green;
+}
+
+.doneButton:hover{
+  
+  background-color: rgb(27, 148, 65);
+  color: antiquewhite;
+  
 }
