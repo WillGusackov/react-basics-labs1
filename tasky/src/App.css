@@ -46,8 +46,11 @@ div {
 
 }
 
-.bold {
+.priority {
   font-weight: bold;
+  background-origin: padding-box;
+  color: bisqueS;
+  
 }
 
 button {
@@ -98,6 +101,8 @@ input[type=text], input[type=date] {
   box-sizing: border-box;
 }
 
+
+
 input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
@@ -113,8 +118,26 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+.priority.high {
+  background-color: red;
+}
+
+.priority.medium {
+  background-color: orange;
+}
+
+.priority.low {
+  background-color: rgb(12, 218, 12);
+  
+}
+
+
+
+
 form {
   text-align: left;
   width: 50%;
   margin: auto;
 }
+
+
